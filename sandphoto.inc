@@ -43,13 +43,16 @@ class Photo
 				break;
 			case "gray":
 				$color = imagecolorallocate($this->im, 128, 128, 128);
+				break;			
+			case "red":
+				$color = imagecolorallocate($this->im, 255, 0, 0);
 				break;
 			default:
 				$color = imagecolorallocate($this->im, 0, 0, 120);
 		}
         imageresolution($this->im, self::DPI);
 		imagefill($this->im, 1, 1, $color);
-		$text = "www.sandcomp.com";
+		$text = "https://yestudio.co.nz/tools/photolayout/";
 		$white = imagecolorallocate($this->im, 255, 255, 255);
 		imagestring($this->im, 3, $this->container_width - strlen($text) * 7.5 , $this->container_height - 20 , $text, $white);
 	}
