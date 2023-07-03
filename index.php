@@ -26,7 +26,10 @@ $parser->render_select('container_type', 8);
 <br>
 <strong>第三步</strong>, 选择分割线的颜色：
 
-<input id="bgcolorid" type="radio" name="bgcolorid" value="blue" checked="checked" /> 蓝色 <input id="bgcolorid" type="radio" name="bgcolorid" value="white" />白色 <input id="bgcolorid" type="radio" name="bgcolorid" value="gray" /> 灰色
+<input id="bgcolorid" type="radio" name="bgcolorid" value="red" /> 红色
+<input id="bgcolorid" type="radio" name="bgcolorid" value="blue" checked="checked" /> 蓝色 
+<input id="bgcolorid" type="radio" name="bgcolorid" value="white" />白色 
+<input id="bgcolorid" type="radio" name="bgcolorid" value="gray" /> 灰色
 
 
 将来的照片就是这个样子的：<br>
