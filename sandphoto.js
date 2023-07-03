@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 	$("#target_type").change(updatePreview);
 	$("#container_type").change(updatePreview);
@@ -12,8 +11,9 @@ function updatePreview()
 	$target_type = $("#target_type option:selected").val();
 	$container_type = $("#container_type option:selected").val();
 	$bgcolorid= $("#sandphotoform input:radio:checked").val();
-	if ($target_type && $container_type && $bgcolorid) {
-		$("#previewImg").attr("src", "/sandphoto/preview.php?t=" + $target_type + "&c=" + $container_type + "&b=" + $bgcolorid);
+	if ($target_type && $container_type && $bgcolorid) 
+	{
+		$("#previewImg").attr("src", "preview.php?t=" + $target_type + "&c=" + $container_type + "&b=" + $bgcolorid);
 	}
 }
 
